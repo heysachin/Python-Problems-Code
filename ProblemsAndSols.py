@@ -502,3 +502,28 @@ print(char_frequency('google'))
 
 
 
+
+
+# Write a Python function to create the HTML string with tags around the word(s).
+# Sample function and result : 
+# add_tags('i', 'Python') -> '<i>Python</i>'
+# add_tags('b', 'Python Tutorial') -> '<b>Python Tutorial </b>'
+ 
+def add_tags(tag, word):
+    return "<%s>%s</%s>" % (tag, word, tag)
+ 
+print(add_tags('i', 'Python'))
+print(add_tags('b', 'Python Tutorial'))
+
+
+# Write a Python function that takes a list of words and returns the length of the longest one
+def find_longest_word(words_list):
+    word_len = []
+    for n in words_list:
+        word_len.append((len(n), n))
+    word_len.sort()
+    return word_len[-1][1]
+print(find_longest_word(["PHP", "Exercises", "Backend"]))
+
+
+
