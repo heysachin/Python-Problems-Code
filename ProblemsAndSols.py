@@ -866,3 +866,11 @@ print(py_solution().threeSum([-25, -10, -7, -3, 2, 4, 8, 10]))
  
 
 
+
+
+
+#              Math
+
+
+
+
