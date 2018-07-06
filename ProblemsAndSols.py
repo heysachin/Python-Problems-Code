@@ -476,3 +476,29 @@ print()
  
 
 
+
+
+#  Write a Python program to change a given string to a new string where the first and last chars have been exchanged
+def change_sring(str1):
+      return str1[-1:] + str1[1:-1] + str1[:1]
+    
+print(change_sring('abcd'))
+print(change_sring('12345'))
+
+
+# Write a Python program to count the number of characters (character frequency) in a string.
+# Sample String : google'
+# Expected Result : {'g': 2, 'o': 2, 'l': 1, 'e': 1}
+def char_frequency(str1):
+    dict = {}
+    for n in str1:
+        keys = dict.keys()
+        if n in keys:
+            dict[n] += 1
+        else:
+            dict[n] = 1
+    return dict
+print(char_frequency('google'))
+
+
+
