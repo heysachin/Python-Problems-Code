@@ -540,3 +540,17 @@ print(remove_char('Python', 3))
 print(remove_char('Python', 5))
 
 
+
+
+# 'The quick brown fox jumps over the lazy dog.'
+# input : "The quick brown fox jumps over the lazy dog."
+# output : "dog. lazy the over jumps fox brown quick The "
+def reverse_string_words(text):
+    for line in text.split('\n'):
+        return(' '.join(line.split()[::-1]))
+    
+print(reverse_string_words("The quick brown fox jumps over the lazy dog."))
+print(reverse_string_words("Python Exercises."))
+
+
+
