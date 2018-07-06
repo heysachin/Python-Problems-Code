@@ -564,3 +564,24 @@ def string_length(str1):
 print(string_length('hello world'))
 
 
+
+
+# Write a Python program that accepts a comma separated sequence of words as input and prints the unique words in sorted form (alphanumerically)
+items = input("Input comma separated sequence of words")
+words = [word for word in items.split(",")]
+print(",".join(sorted(list(set(words)))))
+
+
+#  Write a Python program to count the occurrences of each word in a given sentence
+def word_count(str):
+    counts = dict()
+    words = str.split()
+    for word in words:
+        if word in counts:
+            counts[word] += 1
+        else:
+            counts[word] = 1
+    return counts
+print( word_count('the quick brown fox jumps over the lazy dog.'))
+
+
