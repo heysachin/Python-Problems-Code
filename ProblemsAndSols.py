@@ -585,3 +585,8 @@ def word_count(str):
 print( word_count('the quick brown fox jumps over the lazy dog.'))
 
 
+
+
+
+#              Dictionary
+
