@@ -702,3 +702,7 @@ def random_line(fname):
     return random.choice(lines)
 print(random_line('test.txt'))
 
+
+
+#              Class
+
