@@ -973,7 +973,9 @@ day_of_year = (today - datetime.datetime(today.year, 1, 1)).days + 1
 print(day_of_year)
 
 
-
+#  Write a Python program to get the current time in Python.
+import datetime
+print(datetime.datetime.now().time())
 
 
 
