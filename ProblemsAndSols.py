@@ -1125,7 +1125,65 @@ print(string)
 #              Array
 
 
+str = "abcdbdba"
 
+def longest_substring(str):
+    max_length=0
+
+    for i,c in enumerate(str):
+        start=i
+        sub_str=[]
+        while start<len(str) and str[start] not in sub_str:
+            sub_str.append(str[start])
+            start=start+1
+        print(sub_str)
+
+        if max_length<len(sub_str):
+            max_length=len(sub_str)
+
+    return max_length
+
+print (longest_substring(str))
+
+
+
+
+"""
+Given a collection of intervals which are already sorted by start number, merge all overlapping intervals.
+For example,
+Given [[1,3],[2,6],[5,10],[11,16],[15,18],[19,22]],
+return [[1, 10], [11, 18], [19, 22]]
+"""
+org_intervals = [[1,3],[2,6],[5,10],[11,16],[15,18],[19,22]]
+i = 0
+while i < len(org_intervals)-1:
+#     print(org_intervals[i])
+    if org_intervals[i+1][0] < org_intervals[i][1]:
+        org_intervals[i][1]=org_intervals[i+1][1]
+        del org_intervals[i+1]
+        i = i - 1
+    i = i + 1
+print(org_intervals)
+
+
+"""
+Given a collection of intervals which are already sorted by start number, merge all overlapping intervals.
+For example,
+Given [[1,3],[2,6],[5,10],[11,16],[15,18],[19,22]],
+return [[1, 10], [11, 18], [19, 22]]
+"""
+org_intervals = [[1,3],[2,6],[5,10],[11,16],[15,18],[19,22]]
+i = 0
+while i < len(org_intervals)-1:
+    print(org_intervals)
+    if org_intervals[i+1][0] < org_intervals[i][1]:
+        print("{} < {}".format(org_intervals[i+1][0], org_intervals[i][1]))
+        org_intervals[i][1]=org_intervals[i+1][1]
+        print(org_intervals)
+        del org_intervals[i+1]
+        i = i - 1
+    i = i + 1
+print(org_intervals)
 
 
 
