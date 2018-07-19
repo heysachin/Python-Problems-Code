@@ -1120,6 +1120,10 @@ string = re.sub('\.[0]*', '.', ip)
 print(string)
 
 
+#<-------- Part 2 Algorithms --------->
+
+
+
 
 
 
