@@ -148,11 +148,10 @@ numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9) # Declaring the tuple
 count_odd = 0
 count_even = 0
 for x in numbers:
-        if not x % 2:
+    if not x % 2:
         count_even+=1
-        else:
-        count_odd+=1
-                
+    else:
+        count_odd+=1               
 print("Number of even numbers :",count_even)
 print("Number of odd numbers :",count_odd)
 
@@ -314,7 +313,6 @@ def is_Sublist(l, s):
                 
                 if n == len(s):
                     sub_set = True
- 
     return sub_set
  
 a = [2,4,3,5,7]
@@ -350,7 +348,7 @@ print(list(set(list1) - set(list2)))
 
 
 
-# Write a Python program to get the smallest number from a list.
+# Write a Python program to get the biggest number from a list.
 # max_num_in_list([1, 2, -8, 0])
 # return 2
 def max_num_in_list( list ):
